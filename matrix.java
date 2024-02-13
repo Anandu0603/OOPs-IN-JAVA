@@ -54,3 +54,64 @@ class AddMatrix
 
     }
 }
+
+
+
+
+
+
+     output
+         Enter the number of rows
+4
+Enter the number columns
+4
+Enter the elements of matrix1
+1
+2
+6
+4
+
+4
+5
+6
+7
+
+8
+9
+4
+4
+
+1
+2
+3
+4
+
+Enter the elements of matrix2
+1
+4
+5
+6
+
+7
+8
+9
+7
+
+8
+9
+4
+5
+
+6
+6
+4
+52
+
+Sum of matrices:-
+2	6	11	10	
+11	13	15	14	
+16	18	8	9	
+7	8	7	56	
+1
+
+Process finished with exit code 0
