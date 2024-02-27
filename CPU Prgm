@@ -1,0 +1,68 @@
+class CPU {
+    double price;
+    // nested class
+    class Processor{
+
+        // members of nested class
+        double cores;
+        String manufacturer;
+
+        double getCache(){
+            return 4.3;
+        }
+    }
+
+    // nested protected class
+    protected class RAM{
+
+        // members of protected nested class
+        double memory;
+        String manufacturer;
+
+        double getClockSpeed(){
+            return 5.5;
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        // create object of Outer class CPU
+        CPU cpu = new CPU();
+
+        // create an object of inner class Processor using outer class
+        CPU.Processor processor = cpu.new Processor();
+
+        // create an object of inner class RAM using outer class CPU
+        CPU.RAM ram = cpu.new RAM();
+
+
+########_________output________**********
+
+
+
+C:\Users\mlm\.jdks\openjdk-21.0.2\bin\java.exe "-javaagent:C:\Program Files\Intel\IntelliJ IDEA Community Edition 2023.3.4\lib\idea_rt.jar=51097:C:\Program Files\Intel\IntelliJ IDEA Community Edition 2023.3.4\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\mlm\IdeaProjects\untitled\out\production\untitled sm
+Enter the number of rows:
+
+2
+Enter the number of columns:
+2
+Enter the elements of the matrix
+3
+3
+5
+6
+The elements of the matrix
+3	3	
+5	6	
+The elements of the transpose matrix
+3	5	
+3	6	
+
+The matrix is not symmetric7
+Process finished with exit code 0
+        System.out.println("Processor Cache = " + processor.getCache());
+        System.out.println("Ram Clock speed = " + ram.getClockSpeed());
+    }
+}
