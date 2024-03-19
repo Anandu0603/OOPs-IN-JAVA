@@ -3,7 +3,7 @@ public class StartString {
             String s1="Good Morning";
             System.out.println(s1);
             System.out.println("to upper case:"+s1.toUpperCase());
-            System.out.println("to upper case:"+s1.toLowerCase());
+            System.out.println("to lower case:"+s1.toLowerCase());
         }
     }
 
