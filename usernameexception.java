@@ -15,8 +15,8 @@ class DemoExcp
 {
     public static void main(String args[])
     {
-        String name="bibin";
-        String pass="bibin2002";
+        String name="anandu";
+        String pass="anandu2001";
         Scanner s= new Scanner(System.in);
         System.out.print("Enter username :: ");
         String user=s.nextLine();
